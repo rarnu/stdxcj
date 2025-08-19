@@ -1,0 +1,8 @@
+.DS_Store
+.cache/
+.vscode/
+.idea/
+.fleet/
+target/
+*.a
+

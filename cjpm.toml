@@ -1,0 +1,14 @@
+[package]
+  cjc-version = "1.0.0"
+  name = "stdx"
+  description = "cangjie's stdx library"
+  version = "1.0.0"
+  target-dir = ""
+  src-dir = ""
+  output-type = "static"
+  compile-option = "-Woff unused -Woff deprecated"
+  override-compile-option = ""
+  link-option = "-L . -lstdxcj -lz"
+  package-configuration = {}
+
+[dependencies]
