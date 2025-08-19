@@ -69,28 +69,6 @@ In the Cangjie source code file that needs to use `stdx`, import the correspondi
 
 ### Usage Examples
 
-Assuming that the developer is developing on Linux and wants to import the static binary of `stdx`, the `cjpm.toml` configuration reference is as follows:
-
-```toml
-[dependencies]
-
-[package]
-  cjc-version = "0.59.4"
-  compile-option = "-ldl"
-  description = "nothing here"
-  link-option = ""
-  name = "test"
-  output-type = "executable"
-  src-dir = ""
-  target-dir = ""
-  version = "1.0.0"
-  package-configuration = {}
-
-[target.x86_64-unknown-linux-gnu]
-  [target.x86_64-unknown-linux-gnu.bin-dependencies]
-    path-option = ["/target/linux_x86_64_cjnative/static/stdx"]  # stdx path is configured according to actual situation
-```
-
 Write code: Create an `HTTP` service using the `net.http` package.
 
 ```cangjie

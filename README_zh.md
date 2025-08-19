@@ -69,28 +69,6 @@ $ ./build.sh
 
 ### 使用示例
 
-假设开发者使用 Linux 开发，并希望导入 `stdx` 的静态二进制，`cjpm.toml` 配置参考如下：
-
-```toml
-[dependencies]
-
-[package]
-  cjc-version = "0.60.5"
-  compile-option = "-ldl"              
-  description = "nothing here"
-  link-option = ""
-  name = "test"
-  output-type = "executable"
-  src-dir = ""
-  target-dir = ""
-  version = "1.0.0"
-  package-configuration = {}
-
-[target.x86_64-unknown-linux-gnu]
-  [target.x86_64-unknown-linux-gnu.bin-dependencies]
-    path-option = ["/target/linux_x86_64_cjnative/static/stdx"]  # stdx 路径根据实际情况配置
-```
-
 编写代码：使用 `net.http` 包创建 `HTTP` 服务。
 
 ```cangjie
