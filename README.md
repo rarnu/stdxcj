@@ -17,6 +17,19 @@ stdx = { git = "https://github.com/rarnu/stdxcj" }
 In the above configuration, a reference to the stdxcj library is configured, which must be compiled first:
 
 ```shell
+# ubuntu
+$ sudo apt install libssl-dev zlib1g-dev
+
+# arch
+$ sudo pacman -S openssl zlib
+
+# openEuler
+$ sudo yum install openssl-devel zlib-devel
+
+# alpine
+$ sudo apk add openssl-dev zlib-dev
+
+# Compile after all dependencies installed
 $ cd native
 $ ./build.sh
 ```

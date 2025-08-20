@@ -17,6 +17,19 @@ stdx = { git = "https://github.com/rarnu/stdxcj" }
 在上述配置中，配置了对 stdxcj 库的引用，必须先编译该库:
 
 ```shell
+# ubuntu
+$ sudo apt install libssl-dev zlib1g-dev
+
+# arch
+$ sudo pacman -S openssl zlib
+
+# openEuler
+$ sudo yum install openssl-devel zlib-devel
+
+# alpine
+$ sudo apk add openssl-dev zlib-dev
+
+# 安装完依赖后执行编译
 $ cd native
 $ ./build.sh
 ```
